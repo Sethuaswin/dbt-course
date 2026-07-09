@@ -36,3 +36,8 @@ models:
       +materialized: table
     src:
       +materialized: ephemeral
+
+# Store the test failure data in the datawarehouse like snowflake/databricks
+data_tests:
+  +store_failures: true
+  +schema: _test_failures
