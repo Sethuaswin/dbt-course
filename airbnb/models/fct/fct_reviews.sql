@@ -2,7 +2,9 @@
   config(
     materialized = 'incremental',
     on_schema_change='fail',
-    event_time='review_date'
+    event_time='review_date',
+    incremental_strategy='merge',
+    unique_key='review_id'
     )
 }}
 
