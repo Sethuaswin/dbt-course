@@ -1312,7 +1312,7 @@ WHERE review_text is not null
 
 Passing a time range to our incremental model:
 ```
-dbt run --select fct_reviews  --vars '{start_date: "2024-02-15 00:00:00", end_date: "2024-03-15 23:59:59"}'
+dbt run --select fct_reviews --vars "{start_date: '2024-02-15 00:00:00', end_date: '2024-03-15 23:59:59'}"
 ```
 
 Reference - Working with incremental strategies: https://docs.getdbt.com/docs/build/incremental-models#about-incremental_strategy
